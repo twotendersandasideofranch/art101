@@ -1,0 +1,46 @@
+h1 {
+    color: black;
+    font-size: 200%;
+}
+
+h2 {
+    color: black;
+    font-size: 150%;
+}
+
+
+h3 {
+    color: black;
+    font-size: 150%;
+}
+
+h4 {
+    color: black;
+    font-size: 150%;
+}
+
+h5 {
+    color: black;
+    font-size: 125%;
+}
+
+h6 {
+    color: black;
+    font-size: 125%;
+}
+
+p {
+    font-family: "courier new";
+    text-indent: 20px;
+    margin-left: 10px;
+}
+
+#content {
+    background-color: Tomato;
+    width: 750px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444;
+    font-size: 20px;
+}
