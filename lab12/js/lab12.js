@@ -46,8 +46,7 @@
           text: "Shitty stoner."
        }
   ]
- // Return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
- // depending on length mod 4
+
  function sortingHatLength(str) {
    len = str.length;
    mod = len % 4;
@@ -65,8 +64,7 @@
    }
  }
 
- // take a string and return a hashed checksum of the string
- // from https://stackoverflow.com/questions/26057572/
+
  function checksum(s) {
    var hash = 0, strlen = s.length, i, c;
    if ( strlen === 0 ) {
@@ -75,25 +73,22 @@
    for ( i = 0; i < strlen; i++ ) {
      c = s.charCodeAt( i );
      hash = ((hash << 5) - hash) + c;
-     hash = hash & hash; // Convert to 32bit integer
+     hash = hash & hash;
    }
    return hash;
  };
 
- // Given a name, hash the string, and return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
  function sortingHatHash(str) {
    checksumValue = checksum(str);
    mod = Math.abs(checksumValue) % housesArray.length;
-   return housesArray[mod];      // returns an object from the array
+   return housesArray[mod];
  }
 
- var myButton = document.getElementById("button");
- myButton.addEventListener("click", function() {
-   // get value from input field
+   var myButton = document.getElementById("button");
+      myButton.addEventListener("click", function() {
    var name = document.getElementById("input").value;
-   // use name to get house from SortingHat function
    var houseObj = sortingHatHash(name);
-   // output to output div (adding some text and HTML around the results)
+
    newText = "<h3>The Sorting Hat has sorted you into " + houseObj.title + "</h3>" +
            "<p>" + houseObj.text + "</p>";
    document.getElementById("output").innerHTML = newText;
