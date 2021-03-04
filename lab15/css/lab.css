@@ -1,0 +1,38 @@
+h1 {
+    color: purple;
+    font-size: 225%;
+}
+
+h2 {
+    color: purple;
+    font-size: 150%;
+}
+
+
+
+p {
+    font-family: "Helvetica";
+    text-indent: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#activate {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+#content {
+    background-color: gold;
+    width: 750px;
+    min-height: 500px;
+    padding: 30px;
+    margin: 40px;
+    border: solid 20px #444444;
+    font-size: 20px;
+}
