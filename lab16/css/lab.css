@@ -1,0 +1,10 @@
+
+#content {
+    background-color: gold;
+    width: 750px;
+    min-height: 500px;
+    padding: 30px;
+    margin: 40px;
+    border: solid 20px #444444;
+    font-size: 20px;
+}
